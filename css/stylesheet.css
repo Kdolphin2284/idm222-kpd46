@@ -1,0 +1,44 @@
+html {
+    background-color: #BAD5F0;
+}
+
+.rectangle {
+    background-color: #475C7A;
+    border-radius: 4px;
+    height: 7px;
+    margin: 15px;
+    width: 51px;
+}
+
+.burgerMenu {
+    float: right;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.welcomePage {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25vh;
+    left: 5vh;
+}
+
+.name {
+    bottom: 3vh;
+    position: relative;
+    font-size: 36px;
+}
+
+.skills {
+    font-size: 18px;
+    line-height: 36px;
+}
+
+
