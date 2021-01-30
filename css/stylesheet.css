@@ -1,44 +1,75 @@
+@font-face {
+    font-family: 'D-DIN-Bold';
+    src: url('../fonts/D-DIN-Bold.otf');
+}
+
+@font-face {
+    font-family: 'D-DIN-Condensed-Bold';
+    src: url('../fonts/d-din.condensed-bold.otf');
+}
+
 html {
-    background-color: #BAD5F0;
+    background: linear-gradient(297deg, #F3B1CD 50%,#BAD5F0 50%);
+    height: 100%;
 }
 
 .rectangle {
     background-color: #475C7A;
     border-radius: 4px;
     height: 7px;
-    margin: 15px;
+    margin: 10px;
     width: 51px;
 }
 
 .burgerMenu {
     float: right;
+    position: relative;
+    right: 20px;
+    top: 35px;
 }
 
 h1 {
+    color: #475C7A;
+    font-family: D-DIN-Bold;
     margin: 0;
 }
 
 h2 {
+    color: #475C7A;
+    font-family: D-DIN-Condensed-Bold;
+    font-size: 38px;
+    letter-spacing: .4px;
     margin: 0;
 }
 
 .welcomePage {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 25vh;
     left: 5vh;
+    position: absolute;
+    top: 29vh;
 }
 
 .name {
     bottom: 3vh;
+    font-size: 40px;
     position: relative;
-    font-size: 36px;
 }
 
 .skills {
-    font-size: 18px;
     line-height: 36px;
 }
 
-
+.footer {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    position: absolute;
+    right: 0;
+}
+ .footer img {
+     height: 45.6px;
+     margin: 7px;
+ }
