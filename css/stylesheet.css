@@ -8,68 +8,173 @@
     src: url('../fonts/d-din.condensed-bold.otf');
 }
 
+@font-face {
+    font-family: 'DIN-Alternate';
+    src: url('../fonts/DIN Alternate Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Avenir-Light';
+    src: url('../fonts/Avenir Light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('../fonts/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
 html {
-    background: linear-gradient(297deg, #F3B1CD 50%,#BAD5F0 50%);
+    background-color: #272727;
+    height: 100%;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     height: 100%;
 }
 
+#redHeader {
+    position: absolute;
+    background-color: #FF4E4E;
+    height: 4.437rem;
+    width: 100%;
+    box-shadow: 0 .2vh 6vh black;
+}
+
 .rectangle {
-    background-color: #475C7A;
-    border-radius: 4px;
-    height: 7px;
-    margin: 10px;
-    width: 51px;
+    background-color: #FFFFFF;
+    border-radius: 0.25rem;
+    height: 0.31rem;
+    margin: 0.25rem;
+    width: 2.4375rem;
 }
 
 .burgerMenu {
-    float: right;
-    position: relative;
-    right: 20px;
-    top: 35px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 1.125rem;
+    top: 1.125rem;
 }
 
 h1 {
-    color: #475C7A;
-    font-family: D-DIN-Bold;
+    color: #FFFFFF;
+    font-family: Roboto-Bold, DIN-Alternate;
     margin: 0;
+    font-size: 5rem;
+    letter-spacing: .2rem;
 }
 
 h2 {
-    color: #475C7A;
-    font-family: D-DIN-Condensed-Bold;
-    font-size: 38px;
-    letter-spacing: .4px;
+    color: #FFFFFF;
+    font-family: Roboto-Thin, Avenir-Light, Roboto-Light;
+    font-size: 1.5rem;
+    letter-spacing: 0.08125rem;
+    line-height: 3rem;
     margin: 0;
+    text-shadow: 0 0.125rem 0.75rem #ffffffba;
 }
 
-.welcomePage {
+#welcomePage {
     display: flex;
     flex-direction: column;
-    left: 5vh;
     position: absolute;
-    top: 29vh;
+    top: 25vh;
+    left: 5vh;
 }
 
-.name {
-    bottom: 3vh;
-    font-size: 40px;
+#skills {
+    padding-top: 2rem;
+}
+
+#homeFooter {
+    height: 100%;
+    width: 100%;
     position: relative;
+    bottom: 0rem;
+    background: linear-gradient(180deg, rgba(39,39,39,1) 70%, rgba(255, 78, 78, 0.639) 100%);
+    z-index: -2;
 }
 
-.skills {
-    line-height: 36px;
+/* End of homepage css */
+
+#blueHeader {
+    position: absolute;
+    background-color: #4E99FF;
+    height: 4.437rem;
+    width: 100%;
+    box-shadow: 0 .2vh 6vh black;
 }
 
-.footer {
+#projectWelcome {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25vh;
+    left: 5vh;
+    width: 17.375rem;
+}
+
+#projectWelcome h2 {
+    text-shadow: none;
+    font-size: 2rem;
+}
+
+#projectOptions {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    bottom: 0;
+    text-align: left;
+    position: relative;
+    top: 70vh;
+}
+
+#projectOptions h3 {
+    color: #FFFFFF;
+    font-family: D-Din-Bold;
+    font-size: 2rem;
+    /* text-shadow: 0 0.125rem 0.75rem #4E99FF; */
+    position: relative;
+    top: 1.5rem;
+}
+
+.socialIcons {
     display: flex;
     flex-direction: row;
-    margin: 30px;
     position: absolute;
-    right: 0;
+    bottom: 2.3rem;
+    right: 2rem;
 }
- .footer img {
-     height: 45.6px;
-     margin: 7px;
- }
+
+.socialIcons img {
+    padding-left: 2rem;
+}
+
+.mail {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+#projectFooter {
+    height: 90%;
+    width: 100%;
+    position: relative;
+    bottom: 0rem;
+    background: linear-gradient(180deg, rgba(39,39,39,1) 70%, #4E99FF 100%);
+    z-index: -2;
+}
+
+/* End of project place css */
