@@ -33,24 +33,35 @@
     src: url('../fonts/Roboto-Bold.ttf');
 }
 
+@font-face {
+    font-family: 'Avenir-Roman';
+    src: url('../fonts/avenir-roman-opentype_bigfontsite.com.otf');
+}
+
+a {
+    text-decoration: none;
+}
+
 html {
     background-color: #272727;
     height: 100%;
     font-size: 100%;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 body {
     height: 100%;
+    width: 100%;
 }
 
 #redHeader {
-    position: absolute;
-    background-color: #FF4E4E;
+    position: relative;
+    background-color: #272727;
     height: 4.437rem;
     width: 100%;
-    box-shadow: 0 .2vh 6vh black;
+    /* box-shadow: 0 .2vh 6vh rgba(0, 0, 0, 0.575); */
 }
 
 .rectangle {
@@ -79,7 +90,7 @@ h1 {
 
 h2 {
     color: #FFFFFF;
-    font-family: Roboto-Thin, Avenir-Light, Roboto-Light;
+    font-family: Avenir-Light, Roboto-Light;
     font-size: 1.5rem;
     letter-spacing: 0.08125rem;
     line-height: 3rem;
@@ -111,23 +122,23 @@ h2 {
 /* End of homepage css */
 
 #blueHeader {
-    position: absolute;
+    position: relative;
     background-color: #4E99FF;
     height: 4.437rem;
-    width: 100%;
+    width: auto;
     box-shadow: 0 .2vh 6vh black;
 }
 
-#projectWelcome {
+.welcomeText {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 25vh;
     left: 5vh;
-    width: 17.375rem;
+    width: auto;
 }
 
-#projectWelcome h2 {
+.welcomeText h2 {
     text-shadow: none;
     font-size: 2rem;
 }
@@ -135,10 +146,9 @@ h2 {
 #projectOptions {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: left;
     position: relative;
-    top: 70vh;
+    top: 60vh;
+    width: auto;
 }
 
 #projectOptions h3 {
@@ -148,6 +158,11 @@ h2 {
     /* text-shadow: 0 0.125rem 0.75rem #4E99FF; */
     position: relative;
     top: 1.5rem;
+    text-align: left;
+}
+
+.contentCenter {
+    margin: auto;
 }
 
 .socialIcons {
@@ -177,4 +192,141 @@ h2 {
     z-index: -2;
 }
 
+/* When project page gets big, do wrapping rows for the clickable options */
+
+/* When project page is desktop size, have the title and the text on the left side of the screen, and the clickable options on the right in wrapping rows, 2 in each row */
+
 /* End of project place css */
+
+#greenHeader {
+    position: relative;
+    background-color: #2EBD4C;
+    height: 4.437rem;
+    width: auto;
+    box-shadow: 0 .2vh 6vh black;
+}
+
+#resumeDownload {
+    border-radius: .5rem;
+    position: relative;
+    margin: auto;
+    background-color: #2EBD4C;
+    width: 16rem;
+    height: 2.6rem;
+    top: 40vh;
+}
+
+#resumeDownload h2 {
+    font-family: Avenir-Light;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#resumeText {
+    font-size: 1rem;
+    font-family: Avenir-Roman;
+    color: #FFFFFF;
+    line-height: 1.5rem;
+    margin: auto;
+    padding: 0 1.5rem;
+    position: relative;
+    top: 50vh;
+    max-width: 37.5rem;
+}
+
+#resumeText b {
+    font-size: 1.5rem;
+    font-family: D-Din;
+}
+
+#resumeText li b {
+   font-family: Avenir-Light; 
+   font-size: 1.2rem;
+}
+
+.listBullets {
+    list-style: none;
+}
+
+#resumeTextHeader {
+    text-align: center;
+}
+
+#resumeDownload {
+    border-radius: .5rem;
+    position: relative;
+    margin: auto;
+    background-color: #2EBD4C;
+    width: 12rem;
+    height: 3rem;
+    top: 55vh;
+}
+
+#resumeDownload h2 {
+    font-family: Avenir-Light;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#resumeFooter {
+    height: 90%;
+    width: 100%;
+    position: relative;
+    bottom: 0rem;
+    background: linear-gradient(180deg, rgba(39,39,39,1) 70%, #2EBD4C 100%);
+    z-index: -2;
+}
+
+/* End of resume page css */
+
+#purpleHeader {
+    position: relative;
+    background-color: #B94EFF;
+    height: 4.437rem;
+    width: auto;
+    box-shadow: 0 .2vh 6vh black;
+}
+
+#myImage {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 35vh;
+}
+
+#myImage h3 {
+    color: #FFFFFF;
+    font-family: D-Din-Bold;
+    font-size: 2rem;
+    position: relative;
+    top: 1.5rem;
+    text-align: left;
+}
+
+#myImage img {
+    width: 100%;
+    max-width: 37.5rem;
+}
+
+ #aboutMe {
+    font-size: 1.2rem;
+    font-family: Avenir-Roman;
+    color: #FFFFFF;
+    line-height: 1.5rem;
+    margin: auto;
+    padding: 0 1.5rem;
+    position: relative;
+    top: 40vh;
+    max-width: 37.5rem;
+}
+
+ #aboutMeFooter {
+    height: 70%;
+    width: 100%;
+    position: relative;
+    bottom: 0rem;
+    background: linear-gradient(180deg, rgba(39,39,39,1) 70%, #B94EFF 100%);
+    z-index: -2;
+}
+
+/* End about me page css */
