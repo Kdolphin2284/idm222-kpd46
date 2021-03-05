@@ -40,6 +40,7 @@
 
 a {
     text-decoration: none;
+    color: #FFFFFF;
 }
 
 html {
@@ -129,14 +130,22 @@ h2 {
     box-shadow: 0 .2vh 6vh black;
 }
 
-.welcomeText {
+/* .welcomeText {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 25vh;
     left: 5vh;
-    width: auto;
+} */
+
+.welcomeText {
+    margin: auto;
+    padding: 0 3rem;
+    position: relative;
+    top: 20vh;
+    max-width: 50rem;
 }
+
 
 .welcomeText h2 {
     text-shadow: none;
@@ -147,7 +156,7 @@ h2 {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 60vh;
+    top: 30vh;
     width: auto;
 }
 
@@ -184,7 +193,7 @@ h2 {
 }
 
 #projectFooter {
-    height: 90%;
+    height: 70%;
     width: 100%;
     position: relative;
     bottom: 0rem;
@@ -230,7 +239,7 @@ h2 {
     margin: auto;
     padding: 0 1.5rem;
     position: relative;
-    top: 50vh;
+    top: 30vh;
     max-width: 37.5rem;
 }
 
@@ -259,7 +268,7 @@ h2 {
     background-color: #2EBD4C;
     width: 12rem;
     height: 3rem;
-    top: 55vh;
+    top: 35vh;
 }
 
 #resumeDownload h2 {
@@ -269,7 +278,7 @@ h2 {
 }
 
 #resumeFooter {
-    height: 90%;
+    height: 70%;
     width: 100%;
     position: relative;
     bottom: 0rem;
@@ -291,7 +300,7 @@ h2 {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 35vh;
+    top: 20vh;
 }
 
 #myImage h3 {
@@ -308,7 +317,7 @@ h2 {
     max-width: 37.5rem;
 }
 
- #aboutMe {
+.textWritten {
     font-size: 1.2rem;
     font-family: Avenir-Roman;
     color: #FFFFFF;
@@ -320,13 +329,89 @@ h2 {
     max-width: 37.5rem;
 }
 
+#aboutMeText {
+    font-size: 1.2rem;
+    font-family: Avenir-Roman;
+    color: #FFFFFF;
+    line-height: 1.5rem;
+    margin: auto;
+    padding: 0 1.5rem;
+    position: relative;
+    top: 30vh;
+    max-width: 37.5rem;
+}
+
  #aboutMeFooter {
-    height: 70%;
+    height: 60%;
     width: 100%;
     position: relative;
     bottom: 0rem;
-    background: linear-gradient(180deg, rgba(39,39,39,1) 70%, #B94EFF 100%);
+    background: linear-gradient(180deg, rgba(39,39,39,1) 70%, #b84eff 100%);
     z-index: -2;
 }
 
 /* End about me page css */
+
+.orangeHeader {
+    position: relative;
+    background-color: #FFAE4E;
+    height: 4.437rem;
+    width: auto;
+    box-shadow: 0 .2vh 6vh black;
+}
+
+/* #yaleSchoolOfArtText {
+    position: relative;
+    top: 50vh;
+} */
+
+.contentPagesFooter {
+    height: 70%;
+    width: 100%;
+    position: relative;
+    bottom: 0rem;
+    background: linear-gradient(180deg, rgba(39,39,39,1) 70%, #FFAE4E 100%);
+    z-index: -2;
+}
+
+.contentImages {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.poggjGifs {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 16.40625rem;
+}
+
+.contentImages img {
+    margin: 1.5rem 0;
+}
+
+#manTentVideo video{
+    display: block;
+    margin: 0 auto; 
+    max-width: 16.40625rem;
+    padding: 0;
+}
+
+/* FIX SPACING WITH video */
+
+/* .textWritten {
+    font-size: 1.2rem;
+    font-family: Avenir-Roman;
+    color: #FFFFFF;
+    line-height: 1.5rem;
+    margin: auto;
+    padding: 0 1.5rem;
+    position: relative;
+    top: 40vh;
+    max-width: 37.5rem;
+} */
+
+/* use grid for social media icon placement */
