@@ -57,6 +57,56 @@ body {
     width: 100%;
 }
 
+/* rgb(78, 113, 255) */
+
+.menu {
+    border-bottom: .5rem solid rgb(0, 0, 0);
+    background-color: #3e3e3e;
+    width: 100%;
+    height: 45vh;
+    position: absolute;
+    top: 0rem;
+    z-index: 99;
+}
+
+.menu h4 {
+    font-family: Avenir-Roman;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 4vh;
+    color: #FFFFFF;
+}
+
+.socialMediaHamburger {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socialMediaHamburger img {
+    padding: 0 1rem;
+    position: relative;
+    top: 2vh;
+}
+
+.xButton {
+    position: absolute;
+    right: 1.3rem;
+    top: 1.4rem;
+}
+
+#darkenedState {
+    position: fixed;
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    opacity: .3;
+    z-index: 50;
+}
+
 #redHeader {
     position: relative;
     background-color: #272727;
