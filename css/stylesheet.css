@@ -353,6 +353,10 @@ h2 {
     text-align: center;
 }
 
+#resumeText h3 {
+    font-size: 1.5rem;
+}
+
 #resumeDownload {
     border-radius: .5rem;
     position: relative;
@@ -476,7 +480,7 @@ h2 {
     flex-direction: column;
     position: relative;
     max-width: 20rem;
-    margin: 1.5rem 0;
+    margin: 1.5rem auto;
 }
 
 /* max-height: 12.60375rem; */
@@ -486,16 +490,8 @@ h2 {
     display: flex;
     flex-direction: column;
     position: relative;
-    max-width: 16.40625rem;
-    max-height: 35.25rem;
-}
-
-
-#manTentVideo video{
-    display: block;
-    margin: 0 auto; 
-    max-width: 16.40625rem;
-    padding: 0;
+    max-width: 20rem;
+    margin: 1.5rem auto;
 }
 
 /* FIX SPACING WITH video */
