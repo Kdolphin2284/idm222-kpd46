@@ -22,6 +22,8 @@ menuOptionObj.addEventListener("click", function(){
     console.log('Burger has been closed, burger is now available')
 })
 
+// MAKE IT SO THAT THERE IS NO SCROLL WHILE LOOKING AT THE DROPDOWN MENU
+
 // MAKE CLICK ON DARKENED STATE TO CLOSE MENU
 
 // $('#open').click(function() {

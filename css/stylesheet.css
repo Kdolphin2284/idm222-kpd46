@@ -483,7 +483,18 @@ h2 {
     margin: 1.5rem auto;
 }
 
-/* max-height: 12.60375rem; */
+#manTentVideo {
+margin: auto;
+}
+
+#manTentVideo video{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 20rem;
+    margin: 1.5rem auto;
+}
 
 .poggjGifs {
     margin: auto;
@@ -495,18 +506,6 @@ h2 {
 }
 
 /* FIX SPACING WITH video */
-
-/* .textWritten {
-    font-size: 1.2rem;
-    font-family: Avenir-Roman;
-    color: #FFFFFF;
-    line-height: 1.5rem;
-    margin: auto;
-    padding: 0 1.5rem;
-    position: relative;
-    top: 40vh;
-    max-width: 37.5rem;
-} */
 
 /* use grid for social media icon placement */
 
