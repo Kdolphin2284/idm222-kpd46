@@ -468,10 +468,15 @@ h2 {
 
 .contentImages {
     margin: auto;
+}
+
+.contentImages img{
+    margin: auto;
     display: flex;
     flex-direction: column;
     position: relative;
     max-width: 20rem;
+    margin: 1.5rem 0;
 }
 
 /* max-height: 12.60375rem; */
@@ -485,10 +490,6 @@ h2 {
     max-height: 35.25rem;
 }
 
-
-.contentImages img {
-    margin: 1.5rem 0;
-}
 
 #manTentVideo video{
     display: block;
