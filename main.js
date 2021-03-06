@@ -4,15 +4,15 @@ const xButtonObj = document.getElementById("xButton")
 const menuOptionObj = document.getElementById("menuOption")
 
 burgerObj.addEventListener("click", function(){
-    menu.hidden = !menu.hidden
     darkenedState.hidden = !darkenedState.hidden
+    document.getElementById("menu").style.display = "flex";
     document.getElementById("menu").style.animation = "dropDown .35s ease-in forwards";
     console.log('Burger has been pressed, X is now available')
 })
 
 xButtonObj.addEventListener("click", function(){
-    menu.hidden = !menu.hidden
     darkenedState.hidden = !darkenedState.hidden
+    document.getElementById("menu").style.display = "none";
     console.log('Burger has been closed, burger is now available')
 })
 

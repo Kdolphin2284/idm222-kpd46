@@ -38,6 +38,16 @@
     src: url('../fonts/avenir-roman-opentype_bigfontsite.com.otf');
 }
 
+@font-face {
+    font-family: 'Coco-Gothic-Bold';
+    src: url('../fonts/Coco-Gothic-Bold-trial.ttf');
+}
+
+@font-face {
+    font-family: 'Objectivity-Bold';
+    src: url('../fonts/Objectivity-Bold.otf');
+}
+
 a {
     text-decoration: none;
     color: #FFFFFF;
@@ -63,39 +73,41 @@ body {
     border-bottom: .5rem solid rgb(0, 0, 0);
     background-color: #3e3e3e;
     width: 100%;
-    height: 45vh;
+    height: 30rem;
     position: absolute;
     top: 0rem;
     z-index: 99;
+    display: none;
+    flex-direction: column;
+    text-align: center;
 }
 
 .menu h4 {
     font-family: Avenir-Roman;
     font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    height: 4vh;
     color: #FFFFFF;
+    padding: 0 0 1rem 0;
 }
 
-.socialMediaHamburger {
+ .socialMediaHamburger {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .socialMediaHamburger img {
-    padding: 0 1rem;
-    position: relative;
-    top: 2vh;
+    padding: .5rem 1rem 0;
 }
 
 .xButton {
     position: absolute;
     right: 1.3rem;
     top: 1.4rem;
+}
+
+.burgerSpacing {
+    position: relative;
+    top: 3rem;
 }
 
 #darkenedState {
@@ -112,7 +124,7 @@ body {
     background-color: #272727;
     height: 4.437rem;
     width: 100%;
-    /* box-shadow: 0 .2vh 6vh rgba(0, 0, 0, 0.575); */
+    box-shadow: 0 .2vh 6vh rgba(0, 0, 0, 0.575); 
 }
 
 .rectangle {
@@ -141,9 +153,9 @@ body {
 
 h1 {
     color: #FFFFFF;
-    font-family: Roboto-Bold, DIN-Alternate;
+    font-family: Objectivity-Bold, DIN-Alternate, Roboto-Bold, Coco-Gothic-Bold;
     margin: 0;
-    font-size: 5rem;
+    font-size: 4.5rem;
     letter-spacing: .2rem;
 }
 
@@ -161,8 +173,16 @@ h2 {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 25vh;
-    left: 5vh;
+    top: 15vh;
+}
+
+#welcomeCentering {
+    margin: auto;
+    padding: 0 1.5rem;
+    position: relative;
+    max-width: 37.5rem;
+    text-align: left;
+    width: auto;
 }
 
 #skills {
@@ -170,13 +190,14 @@ h2 {
 }
 
 #homeFooter {
-    height: 100%;
+    height: 70%;
     width: 100%;
-    position: relative;
+    position: absolute;
     bottom: 0rem;
     background: linear-gradient(180deg, rgba(39,39,39,1) 70%, rgba(255, 78, 78, 0.639) 100%);
     z-index: -2;
 }
+
 
 /* End of homepage css */
 
@@ -197,11 +218,19 @@ h2 {
 } */
 
 .welcomeText {
-    margin: auto;
-    padding: 0 3rem;
     position: relative;
     top: 20vh;
-    max-width: 50rem;
+    width: auto;
+    text-align: center;
+}
+
+.centerWelcomeText {
+    margin: auto;
+    padding: 0 1.5rem;
+    position: relative;
+    max-width: 37.5rem;
+    text-align: left;
+    width: auto;
 }
 
 
@@ -442,7 +471,10 @@ h2 {
     display: flex;
     flex-direction: column;
     position: relative;
+    max-width: 20rem;
 }
+
+/* max-height: 12.60375rem; */
 
 .poggjGifs {
     margin: auto;
@@ -450,7 +482,9 @@ h2 {
     flex-direction: column;
     position: relative;
     max-width: 16.40625rem;
+    max-height: 35.25rem;
 }
+
 
 .contentImages img {
     margin: 1.5rem 0;
