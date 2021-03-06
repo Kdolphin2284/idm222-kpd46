@@ -6,7 +6,7 @@ const menuOptionObj = document.getElementById("menuOption")
 burgerObj.addEventListener("click", function(){
     menu.hidden = !menu.hidden
     darkenedState.hidden = !darkenedState.hidden
-    document.getElementById("menu").style.animation = "dropDown .2s ease-in forwards";
+    document.getElementById("menu").style.animation = "dropDown .35s ease-in forwards";
     console.log('Burger has been pressed, X is now available')
 })
 
@@ -21,6 +21,8 @@ menuOptionObj.addEventListener("click", function(){
     darkenedState.hidden = !darkenedState.hidden
     console.log('Burger has been closed, burger is now available')
 })
+
+// MAKE CLICK ON DARKENED STATE TO CLOSE MENU
 
 // $('#open').click(function() {
 //     $('#modalOverlay').show().addClass('modal-open');
