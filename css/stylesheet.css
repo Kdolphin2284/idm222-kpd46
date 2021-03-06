@@ -375,7 +375,7 @@ h2 {
     margin: auto;
     padding: 0 1.5rem;
     position: relative;
-    top: 40vh;
+    top: 30vh;
     max-width: 37.5rem;
 }
 
@@ -465,3 +465,26 @@ h2 {
 } */
 
 /* use grid for social media icon placement */
+
+/* Start of transition/animation css */
+
+@keyframes dropDown {
+    from {
+        top: -50rem;
+    }
+
+    top {
+        top: 0rem;
+    }
+}
+
+/* @keyframes slideUp {
+    from {
+        top: 0rem;
+    }
+
+    top {
+        top: -50rem;
+    }
+} */
+
