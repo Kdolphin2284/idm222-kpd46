@@ -202,11 +202,12 @@ h2 {
 /* End of homepage css */
 
 #blueHeader {
-    position: relative;
+    position: fixed;
     background-color: #4E99FF;
     height: 4.437rem;
-    width: auto;
+    width: 100%;
     box-shadow: 0 .2vh 6vh black;
+    z-index: 10;
 }
 
 /* .welcomeText {
@@ -300,11 +301,12 @@ h2 {
 /* End of project place css */
 
 #greenHeader {
-    position: relative;
+    position: fixed;
     background-color: #2EBD4C;
     height: 4.437rem;
-    width: auto;
+    width: 100%;
     box-shadow: 0 .2vh 6vh black;
+    z-index: 10;
 }
 
 #resumeDownload {
@@ -385,11 +387,12 @@ h2 {
 /* End of resume page css */
 
 #purpleHeader {
-    position: relative;
+    position: fixed;
     background-color: #B94EFF;
     height: 4.437rem;
-    width: auto;
+    width: 100%;
     box-shadow: 0 .2vh 6vh black;
+    z-index: 10;
 }
 
 #myImage {
@@ -449,11 +452,12 @@ h2 {
 /* End about me page css */
 
 .orangeHeader {
-    position: relative;
+    position: fixed;
     background-color: #FFAE4E;
     height: 4.437rem;
-    width: auto;
+    width: 100%;
     box-shadow: 0 .2vh 6vh black;
+    z-index: 10;
 }
 
 /* #yaleSchoolOfArtText {
