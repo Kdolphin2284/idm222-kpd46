@@ -120,11 +120,12 @@ body {
 }
 
 #redHeader {
-    position: relative;
+    position: fixed;
     background-color: #272727;
     height: 4.437rem;
     width: 100%;
-    box-shadow: 0 .2vh 6vh rgba(0, 0, 0, 0.575); 
+    box-shadow: 0 .2vh 2vh rgba(0, 0, 0, 0.705);
+    z-index: 10;
 }
 
 .rectangle {
@@ -186,11 +187,20 @@ h2 {
     text-shadow: 0 0.125rem 0.75rem #ffffffba;
 }
 
+/* #homeNameLong {
+    display: initial;
+}
+
+#homeNameShort {
+    display: none;
+} */
+
 #welcomePage {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 15vh;
+    max-width: 500px;
     
 }
 
@@ -439,6 +449,10 @@ h2 {
     max-width: 37.5rem;
 }
 
+#aboutMeHiddenImage {
+    display: none;
+}
+
 .textWritten {
     font-size: 1.2rem;
     font-family: Avenir-Roman;
@@ -596,6 +610,11 @@ margin: auto;
         top: 35vh;
     } 
 
+    #myImage img {
+        width: 100%;
+        max-width: 50rem;
+    }
+
 }
 
 @media screen and (min-width: 800px) {
@@ -615,6 +634,7 @@ margin: auto;
         position: relative;
         margin: auto;
         top: 15vh;
+        right: 5rem;
     }
     
     #welcomeCentering {
@@ -646,9 +666,35 @@ margin: auto;
         top: 37vh;
     } 
 
+    #myImage img {
+        width: 100%;
+        max-width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
+
+    /* #homeNameShort {
+        display: none;
+    }
+
+    #homeNameLong {
+        display: initial;
+    } */
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    li {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    #resumeText h3 {
+        font-size: 2rem;
+    }
 
     .burgerMenu {
         display: none;
@@ -662,8 +708,9 @@ margin: auto;
         flex-direction: column;
         position: relative;
         margin: auto;
-        top: 15vh;
-        right: 10rem;
+        top: 25vh;
+        left: 4rem;
+        max-width: 1000px;
     }
 
     #welcomeCentering {
@@ -672,7 +719,7 @@ margin: auto;
         max-width: 100%;
         text-align: left;
         width: auto;
-        right: 5vh;
+        right: 20vh;
     }
 
     .welcomeText {
@@ -744,8 +791,18 @@ margin: auto;
         top: 5rem;
     }
 
+    #aboutMeHiddenImage {
+        display: flex;
+        padding-bottom: 1.5rem;
+    }
+
+    #aboutMeText p{
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+
     #aboutMeFooter {
-        height: 50%;
+        height: 60%;
         width: 100%;
         position: relative;
         bottom: 0rem;

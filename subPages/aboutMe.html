@@ -64,10 +64,17 @@
         <div id="myImage">
             <div class="contentCenter">
                 <h3>Hi, I'm Kyle Dolphin</h3>
-                <picture>
-                    <source srcset="../media/images/kylePicture.png" alt="Image of Me, Kyle Dolphin" type="image/png">
-                    <img src="../media/images/kylePicture.webp" alt="Image of Me, Kyle Dolphin">
-                </picture>
+                <div id="aboutMeWide">
+                    <div id="aboutMeHiddenImage">
+                        <img src="../media/images/mePhotoOne.webp">
+                    </div>
+                    <picture>
+                        <source srcset="../media/images/mePhotoTwoMedium.webp" media="(min-width: 600px)">
+                        <source srcset="../media/images/mePhotoTwoMedium.png" media="(min-width: 600px)">
+                        <source srcset="../media/images/mePhotoTwo.png" alt="Image of Me, Kyle Dolphin" type="image/png">
+                        <img src="../media/images/mePhotoTwo.webp" alt="Image of Me, Kyle Dolphin">
+                    </picture>
+                </div>
             </div>
         </div>
 
