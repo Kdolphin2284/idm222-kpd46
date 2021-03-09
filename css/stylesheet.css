@@ -520,7 +520,8 @@ h2 {
 }
 
 #manTentVideo {
-margin: auto;
+    margin: auto;
+    display: initial;
 }
 
 #manTentVideo video{
@@ -528,7 +529,19 @@ margin: auto;
     display: flex;
     flex-direction: column;
     position: relative;
-    max-width: 20rem;
+    margin: 1.5rem auto;
+}
+
+#manTentVideoLarge {
+    margin: auto;
+    display: none;
+}
+
+#manTentVideoLarge video{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     margin: 1.5rem auto;
 }
 
@@ -615,6 +628,28 @@ margin: auto;
         max-width: 50rem;
     }
 
+    .contentImages img{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        max-width: 100%;
+        width: auto;
+        margin: 1.5rem auto;
+    }
+
+    .textWritten {
+        font-size: 1.4rem;
+        font-family: Avenir-Roman;
+        color: #FFFFFF;
+        line-height: 1.7rem;
+        margin: auto;
+        padding: 0 1.5rem;
+        position: relative;
+        top: 30vh;
+        max-width: 37.5rem;
+    }
+
 }
 
 @media screen and (min-width: 800px) {
@@ -671,6 +706,44 @@ margin: auto;
         max-width: 100%;
     }
 
+    .textWritten {
+        font-size: 1.4rem;
+        font-family: Avenir-Roman;
+        color: #FFFFFF;
+        line-height: 1.7rem;
+        margin: auto;
+        padding: 0 1.5rem;
+        position: relative;
+        top: 30vh;
+        max-width: 37.5rem;
+    }
+
+    #manTentVideo {
+        margin: auto;
+        display: none;
+    }
+    
+    #manTentVideo video{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 1.5rem auto;
+    }
+
+    #manTentVideoLarge {
+        margin: auto;
+        display: initial;
+    }
+    
+    #manTentVideoLarge video{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 1.5rem auto;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -683,7 +756,7 @@ margin: auto;
         display: initial;
     } */
 
-    p {
+    #resumeTextHeader p {
         font-size: 1.2rem;
     }
 
@@ -810,4 +883,20 @@ margin: auto;
         z-index: -2;
     }
 
+    .textWritten {
+        font-size: 1.4rem;
+        font-family: Avenir-Roman;
+        color: #FFFFFF;
+        line-height: 1.7rem;
+        margin: auto;
+        padding: 0 1.5rem;
+        position: relative;
+        top: 30vh;
+        max-width: 40.625rem;
+    }
+
+    .contentImages img{
+        max-width: 100%;
+        width: 100%;
+    }
 }
