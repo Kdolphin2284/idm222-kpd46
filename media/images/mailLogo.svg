@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="32px" viewBox="0 0 40 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>mailLogo</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mailLogo" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M34,0 L6,0 C2.6862915,0 0,2.6862915 0,6 L0,26 C0,29.3137085 2.6862915,32 6,32 L34,32 C37.3137085,32 40,29.3137085 40,26 L40,6 C40,2.6862915 37.3137085,0 34,0 Z M32.66,4 L20,13.5 L7.34,4 L32.66,4 Z M34,28 L6,28 C4.8954305,28 4,27.1045695 4,26 L4,6.5 L18.8,17.6 C19.1461923,17.8596443 19.5672596,18 20,18 C20.4327404,18 20.8538077,17.8596443 21.2,17.6 L36,6.5 L36,26 C36,27.1045695 35.1045695,28 34,28 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
