@@ -166,6 +166,7 @@ body {
 }
 
 .maxHeadSpace {
+    display: block;
     padding: 0 1.5rem;
 }
 
@@ -186,14 +187,6 @@ h2 {
     margin: 0;
     text-shadow: 0 0.125rem 0.75rem #ffffffba;
 }
-
-/* #homeNameLong {
-    display: initial;
-}
-
-#homeNameShort {
-    display: none;
-} */
 
 #welcomePage {
     display: flex;
@@ -238,14 +231,6 @@ h2 {
     box-shadow: 0 .2vh 2vh rgba(0, 0, 0, 0.705);
     z-index: 10;
 }
-
-/* .welcomeText {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 25vh;
-    left: 5vh;
-} */
 
 .welcomeText {
     position: relative;
@@ -300,6 +285,7 @@ h2 {
 }
 
 .socialIcons img {
+    display: block;
     padding-left: 2rem;
 }
 
@@ -308,8 +294,6 @@ h2 {
     bottom: 2rem;
     left: 2rem;
 }
-
-
 
 #projectFooter {
     height: 70%;
@@ -324,10 +308,6 @@ h2 {
     position: relative;
     bottom: 0rem;
 }
-
-/* When project page gets big, do wrapping rows for the clickable options */
-
-/* When project page is desktop size, have the title and the text on the left side of the screen, and the clickable options on the right in wrapping rows, 2 in each row */
 
 /* End of project place css */
 
@@ -464,7 +444,7 @@ h2 {
     margin: auto;
     padding: 0 1.5rem;
     position: relative;
-    top: 30vh;
+    top: 23vh;
     max-width: 37.5rem;
 }
 
@@ -522,6 +502,19 @@ h2 {
     margin: 1.5rem auto;
 }
 
+#opggImages {
+    margin: auto;
+}
+
+#opggImages img {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 20rem;
+    margin: 1.5rem auto;
+}
+
 #manTentVideo {
     margin: auto;
     display: initial;
@@ -557,8 +550,6 @@ h2 {
     margin: 1.5rem auto;
 }
 
-/* use grid for social media icon placement */
-
 /* Start of transition/animation css */
 
 @keyframes dropDown {
@@ -566,24 +557,15 @@ h2 {
         top: -50rem;
     }
 
-    top {
+    to {
         top: 0rem;
     }
 }
 
-/* @keyframes slideUp {
-    from {
-        top: 0rem;
-    }
-
-    top {
-        top: -50rem;
-    }
-} */
-
 /* Media Query Start css */
 
 @media screen and (min-width: 600px) {
+    
     h1 {
         font-size: 5.5rem;
     }
@@ -649,13 +631,29 @@ h2 {
         margin: auto;
         padding: 0 1.5rem;
         position: relative;
-        top: 30vh;
+        top: 23vh;
         max-width: 37.5rem;
     }
 
+    #opggImages {
+        position: relative;
+        margin: auto;
+        justify-content: center;
+        grid-template-columns:  repeat(2, 300.5px);
+        grid-template-rows: repeat(2, 280px);
+        display: grid;
+        row-gap: 20rem;
+        padding-bottom: 18rem;
+    }
+    
+    #opggImages img {
+        display: grid;
+        margin: auto;
+    }
 }
 
 @media screen and (min-width: 800px) {
+    
     h1 {
         font-size: 8rem;
     }
@@ -717,7 +715,7 @@ h2 {
         margin: auto;
         padding: 0 1.5rem;
         position: relative;
-        top: 30vh;
+        top: 23vh;
         max-width: 37.5rem;
     }
 
@@ -750,14 +748,6 @@ h2 {
 }
 
 @media screen and (min-width: 1200px) {
-
-    /* #homeNameShort {
-        display: none;
-    }
-
-    #homeNameLong {
-        display: initial;
-    } */
 
     #resumeTextHeader p {
         font-size: 1.2rem;
@@ -894,12 +884,51 @@ h2 {
         margin: auto;
         padding: 0 1.5rem;
         position: relative;
-        top: 30vh;
+        top: 23vh;
         max-width: 40.625rem;
     }
 
     .contentImages img{
         max-width: 100%;
         width: 100%;
+    }
+
+    .maxHeadSpace h2 {
+        text-shadow: none;
+    }
+
+    .maxHeadSpace h2:hover {
+        text-shadow: none;
+        text-shadow: 0 0.125rem 0.75rem #ffffffba;
+        cursor: pointer;
+    }
+
+    #homeMaxHeader h2{
+        text-shadow: 0 0.125rem 1rem #ffffff;
+    }
+
+    .projectMaxHeader h2{
+        text-shadow: 0 0.125rem 1rem #ffffff;
+    }
+
+    #resumeMaxHeader h2{
+        text-shadow: 0 0.125rem 1rem #ffffff;
+    }
+
+    #aboutMaxHeader h2{
+        text-shadow: 0 0.125rem 1rem #ffffff;
+    }
+
+    #opggImages {
+        display: flex;
+        margin: auto;
+        flex-direction: row;
+        padding: 0;
+    }
+    
+    #opggImages img {
+        display: flex;
+        margin: auto;
+        padding: 0 1rem;
     }
 }

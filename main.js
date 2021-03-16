@@ -1,7 +1,6 @@
 const burgerObj = document.getElementById("burger")
 const menuObj = document.getElementById("menu")
 const xButtonObj = document.getElementById("xButton")
-const menuOptionObj = document.getElementById("menuOption")
 const darkStateObj = document.getElementById("darkenedState")
 
 function noScroll(){

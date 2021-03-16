@@ -18,24 +18,28 @@
             </div>
         </div>
 
-            <div class="menu" id="menu">
+            <nav class="menu" id="menu">
                 <div class="xButton" id="xButton">
                     <img src="../../media/images/xButton.svg" alt="X Button Icon">
                 </div>
                 <div class="burgerSpacing">
-                    <a href="../../index.html" id="menuOption"><h4>Home</h4></a>
-                    <a href="../theProjectPlace.html" id="menuOption"><h4>The Project Place</h4></a>
-                    <a href="../resume.html" id="menuOption"><h4>Resume</h4></a>
-                    <a href="../aboutMe.html" id="menuOption"><h4>About Me</h4></a>
-            </div>
-        </div>
+                    <a href="../../index.html"><h4>Home</h4></a>
+                    <div class="projectMaxHeader">
+                        <a href="../theProjectPlace.html"><h2>The Project Place</h2></a>
+                    </div>
+                    <a href="../resume.html"><h4>Resume</h4></a>
+                    <a href="../aboutMe.html"><h4>About Me</h4></a>
+                </div>
+            </nav>
 
-        <div class="maxHeader">
+        <nav class="maxHeader">
             <div class="maxHeadSpace">
                 <a href="../../index.html"><h2>Home</h2></a>
             </div>
             <div class="maxHeadSpace">
-                <a href="../theProjectPlace.html"><h2>The Project Place</h2></a>
+                <div class="projectMaxHeader">
+                    <a href="../theProjectPlace.html"><h2>The Project Place</h2></a>
+                </div>
             </div>
             <div class="maxHeadSpace">
                 <a href="../resume.html"><h2>Resume</h2></a>
@@ -43,7 +47,7 @@
             <div class="maxHeadSpace">
                 <a href="../aboutMe.html"><h2>About Me</h2></a>
             </div>
-        </div>
+        </nav>
 
     <div class="welcomeText">
         <div class="centerWelcomeText">
@@ -60,15 +64,24 @@
         better. I felt that the app didn’t look too bad, but that there were definitely aspects 
         that could be improved, such as the overall user interface, as well as how different 
         interactions appeared to the user.</p>
-    <div class="contentImages">
+    <div id="opggImages">
         <picture>
-            <source srcset="../../media/images/poggjOriginalsLarge.webp" media="(min-width: 600px)">
-            <source srcset="../../media/images/poggjOriginalsLarge.png" media="(min-width: 600px)">
-            <source srcset="../../media/images/poggjOriginals.png" alt="OP.GGOriginalScreenshots" type="image/png">
-            <img src="../../media/images/poggjOriginals.webp" alt="OP.GG Original Screenshots">
+            <source srcset="../../media/images/opggOriginalOneSmall.png" media="(min-width: 600px)">
+            <img src="../../media/images/opggOriginalOne.png" alt="First Screenshot of OPGG">
+        </picture>
+        <picture>
+            <source srcset="../../media/images/opggOriginalTwoSmall.png" media="(min-width: 600px)">
+            <img src="../../media/images/opggOriginalTwo.png" alt="Second Screenshot of OPGG">
+        </picture>
+        <picture>
+            <source srcset="../../media/images/opggOriginalThreeSmall.png" media="(min-width: 600px)">
+            <img src="../../media/images/opggOriginalThree.png" alt="Third Screenshot of OPGG">
+        </picture>
+        <picture>
+            <source srcset="../../media/images/opggOriginalFourSmall.png" media="(min-width: 600px)">
+            <img src="../../media/images/opggOriginalFour.png" alt="Fourth Screenshot of OPGG">
         </picture>
     </div>
-        <!-- export the original images separately and make them row wrap, possibly -->
 
         <p>The first interaction that I decided to work on was the switch from the homepage 
         to the champion page. I chose to change the color of the page icons in the 
