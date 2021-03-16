@@ -209,15 +209,14 @@ h2 {
 #skills {
     padding-top: 2rem;
 }
-#homeBackground {
-    min-height: 100vh;
-    background: linear-gradient(180deg, rgba(39,39,39,1) 80%, rgba(255, 78, 78, 0.877) 100%);
-}
 
 #homeFooter {
+    height: 70%;
     width: 100%;
-    position: relative;
+    position: absolute;
     bottom: 0rem;
+    background: linear-gradient(180deg, rgba(39,39,39,1) 70%, rgba(255, 78, 78, 0.877) 100%);
+    z-index: -2;
 }
 
 
@@ -266,7 +265,6 @@ h2 {
     color: #FFFFFF;
     font-family: D-Din-Bold;
     font-size: 2rem;
-    /* text-shadow: 0 0.125rem 0.75rem #4E99FF; */
     position: relative;
     top: 1.5rem;
     text-align: left;
